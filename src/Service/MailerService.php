@@ -77,8 +77,8 @@ class MailerService
                         $email = (new Email())
                             ->from('flight-company@example.com')
                             ->to($passenger->getEmail())
-                            ->subject('Your flight is sold out!')
-                            ->text('Your flight is sold out!');
+                            ->subject('Your flight is cancelled!')
+                            ->text('Your flight is cancelled!');
 
                         $this->mailer->send($email);
                     }
